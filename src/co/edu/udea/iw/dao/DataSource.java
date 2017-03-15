@@ -39,7 +39,7 @@ public class DataSource{
 		return con;
 	}
 
-	public static Connection getConnection() throws MyException, SQLException {
+	public Connection getConnection() throws MyException, SQLException {
 		if((con == null) || (con.isClosed()))
 		{
 			con = generateConnection();

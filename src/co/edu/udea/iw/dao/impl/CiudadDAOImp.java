@@ -21,7 +21,7 @@ public class CiudadDAOImp implements CiudadDAO {
 
 	@Override
 	public List<Ciudad> obtener() throws MyException {
-		DataSource ds = null;
+		DataSource ds = null; 
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
