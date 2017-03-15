@@ -19,6 +19,7 @@ import co.edu.udea.iw.exception.MyException;
 
 public class CiudadDAOImpTest {
 
+	//Prueba del metodo para obtener las ciudades
 	@Test
 	public void testObtenerCiudades() {
 		CiudadDAO ciudadDao = null;
@@ -34,6 +35,7 @@ public class CiudadDAOImpTest {
 		}
 	}
 	
+	//Prueba que se encarga de probar el metodo de obtener una ciudad por el codigo
 	@Test
 	public void testObtenerCiudadPorId() {
 		CiudadDAO ciudadDao = null;

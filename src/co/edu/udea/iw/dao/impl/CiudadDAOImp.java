@@ -19,6 +19,7 @@ import co.edu.udea.iw.exception.MyException;
 
 public class CiudadDAOImp implements CiudadDAO {
 
+	//Metodo que devuelve todas las ciudades
 	@Override
 	public List<Ciudad> obtener() throws MyException {
 		DataSource ds = null; 
@@ -59,6 +60,7 @@ public class CiudadDAOImp implements CiudadDAO {
 		return lista;
 	}
 
+	//Metodo que devuelve una ciudad con su codigo
 	@Override
 	public Ciudad obtener(Long codigo) throws MyException {
 		DataSource ds = null;

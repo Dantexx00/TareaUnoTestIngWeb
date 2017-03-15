@@ -13,10 +13,12 @@ import co.edu.udea.iw.exception.*;
 public class DataSource{
 	
 	private static DataSource dataSource = null;
+	
 	private static Connection con = null;
 			
 	private DataSource() { }
 	
+	//Metodo con el que se obtiene la instancia del DataSource
 	public static DataSource getInstance() throws MyException
 	{
 		if(dataSource == null)
@@ -26,6 +28,7 @@ public class DataSource{
 		return dataSource;
 	}
 	
+	//Metodo protegido el cual obtiene la conexion con la base de datos
 	protected static Connection generateConnection() throws MyException{
 		Connection con = null;
 		try{
@@ -39,6 +42,7 @@ public class DataSource{
 		return con;
 	}
 
+	//Metodo que se encarga que se usa para proveer la conexion fuera de la clase
 	public Connection getConnection() throws MyException, SQLException {
 		if((con == null) || (con.isClosed()))
 		{
